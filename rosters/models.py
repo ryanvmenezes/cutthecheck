@@ -34,11 +34,8 @@ class Squad(models.Model):
         return self.manager
 
     # @property
-    # def total_cap_hit(self):
-    #     total = 0
-    #     for p in self.player_set.all():
-    #         total += p.salary_1516
-    #     return total
+    # def get_total_cap_hit_display(self):
+    #     return '${}'.format(self.total_cap_hit)
 
     @property
     def cap_room(self):

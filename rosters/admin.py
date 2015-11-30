@@ -10,9 +10,10 @@ class PlayerInline(admin.TabularInline):
 @admin.register(Squad)
 class SquadAdmin(admin.ModelAdmin):
     readonly_fields = (
+        "manager",
         "total_cap_hit", 
         "cap_room",
-        #"self.Player.full_name",
+        # "player_set.full_name",
     )
     list_display = ("manager", "total_cap_hit", "cap_room",)
     inlines = [PlayerInline]
