@@ -2,4 +2,4 @@ analysis/*
 keyfile.txt
 tokenfile.txt
 .Rhistory
-*.pyc
+*.py[cod]

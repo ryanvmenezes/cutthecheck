@@ -25,15 +25,20 @@ class Squad(models.Model):
         choices=MANAGER_CHOICES,
     )
 
+    total_cap_hit = models.IntegerField(
+        null=True,
+        default=0
+    )
+
     def __unicode__(self):
         return self.manager
 
-    @property
-    def total_cap_hit(self):
-        total = 0
-        for p in self.player_set.all():
-            total += p.salary_1516
-        return total
+    # @property
+    # def total_cap_hit(self):
+    #     total = 0
+    #     for p in self.player_set.all():
+    #         total += p.salary_1516
+    #     return total
 
     @property
     def cap_room(self):
@@ -58,7 +63,10 @@ class Player(models.Model):
         help_text="Cap hit for this player",
     )
 
-    manager = models.ForeignKey(Squad)
+    manager = models.ForeignKey(
+        Squad,
+        null=True
+    )
 
     def __unicode__(self):
         return self.full_name    
