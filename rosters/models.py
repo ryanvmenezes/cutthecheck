@@ -3,15 +3,16 @@ from django.db import models
 # Create your models here.
 
 class Squad(models.Model):
+    # nicknames from each Yahoo account
     MANAGER_CHOICES = (
         ('Austin','Austin Manapsal',),
-        ('Sam','Sam Tesconi',),
-        ('Eli','Eli Smukler',),
-        ('Pedro','Pedro Moura',),
+        ('sam','Sam Tesconi',),
+        ('eli','Eli Smukler',),
+        ('Pedro Moura','Pedro Moura',),
         ('Zach','Zach Helfand',),
         ('Everett','Everett Cook',),
-        ('Kartje','Ryan Kartje',),
-        ('Menezes','Ryan Menezes',),
+        ('Ryan Kartje','Ryan Kartje',),
+        ('Ryan','Ryan Menezes',),
         ('Justin','Justin Cerri',),
         ('Vineeth','Vineeth Pillai',),
         # (None, "FA")
