@@ -54,6 +54,7 @@ class Player(models.Model):
     )
 
     salary_1516 = models.IntegerField(
+        null=True,
         help_text="Cap hit for this player",
     )
 
