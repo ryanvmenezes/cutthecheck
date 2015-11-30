@@ -30,7 +30,7 @@ for t in teams:
 	for r in rows[1:]:
 		try:
 			player_name = r.find(attrs={'class':'player'}).a.string
-			cap_hit = r.find(title=re.compile('Cap Figure')).string
+			cap_hit = r.find(title=re.compile('Cap Figure')).string.replace('$','').replace(',','').replace(' ','')
 			print "player {} has a cap hit of {}".format(player_name, cap_hit)
 		except (UnicodeEncodeError, UnicodeDecodeError) as e:
 			player_name = 'Dennis Schroeder'
