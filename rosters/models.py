@@ -33,10 +33,6 @@ class Squad(models.Model):
     def __unicode__(self):
         return self.manager
 
-    # @property
-    # def get_total_cap_hit_display(self):
-    #     return '${}'.format(self.total_cap_hit)
-
     @property
     def cap_room(self):
         return 70000000 - self.total_cap_hit

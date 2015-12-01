@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block body %}
+<div class="row-fluid">
+    <h1 style="margin-bottom:15px;">Team detail: {{ squad.manager }}</h1>
+</div>
+<div class="row">
+	<table class="table span9">
+	    <thead>
+	    <tr>
+	        <th>Player</th>
+	        <th>NBA team</th>
+	        <th class="right">Salary</th>
+	    </tr>
+	    </thead>
+    	{% for obj in squad.player_set.all %}
+    	<tr>
+    		<td>{{ obj.full_name }}</td>
+    		<td>{{ obj.nba_team }}</td>
+    		<td class="right">${{ obj.salary_1516|intcomma }}</td>
+		</tr>
+	    {% endfor %}
+	</table>
+</div>
+<p><strong><a href="../audit">Back to audit</a></strong></p>
+{% endblock %}

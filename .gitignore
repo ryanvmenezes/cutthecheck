@@ -1,5 +1,5 @@
-analysis/*
+*.py[cod]
+analysis/
 keyfile.txt
 tokenfile.txt
 .Rhistory
-*.py[cod]
