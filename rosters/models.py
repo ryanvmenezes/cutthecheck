@@ -1,8 +1,19 @@
 from django.db import models
+from bakery.models import BuildableModel
 
 # Create your models here.
 
-class Squad(models.Model):
+class Squad(BuildableModel):
+    '''
+    A fantasy team in this league
+    '''
+
+    detail_views = (
+        'rosters.views.AuditView',
+        'rosters.views.ProfileView',
+        'rosters.views.BibleView',
+    )
+
     # nicknames from each Yahoo account
     MANAGER_CHOICES = (
         ('Austin','Austin Manapsal',),
@@ -40,7 +51,17 @@ class Squad(models.Model):
         return 70000000 - self.total_cap_hit
     
 
-class Player(models.Model):
+class Player(BuildableModel):
+    '''
+    A real player from the NBA
+    '''
+
+    detail_views = (
+        'rosters.views.AuditView',
+        'rosters.views.ProfileView',
+        'rosters.views.BibleView',
+    )
+
     full_name = models.CharField(
         max_length=150,
         null=True,
@@ -69,10 +90,17 @@ class Player(models.Model):
     def __unicode__(self):
         return self.full_name
 
-class LastUpdated(models.Model):
+class LastUpdated(BuildableModel):
     '''
     When these data were updated last
     '''
+
+    detail_views = (
+        'rosters.views.AuditView',
+        'rosters.views.ProfileView',
+        'rosters.views.BibleView',
+    )
+
     last_update = models.DateTimeField(
         null=True,
         blank=False,

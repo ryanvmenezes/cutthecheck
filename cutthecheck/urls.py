@@ -23,8 +23,8 @@ urlpatterns = patterns('',
     url(r'^$', views.AuditView.as_view(), name="league-audit"),
     url(r'^bible/', views.BibleView.as_view(), name='salary-bible'),
     url(
-        r'^detail/(?P<manager>[-_\w]+)/$',
-        views.DetailView.as_view(),
+        r'^detail/(?P<slug>[-_\w]+)/$',
+        views.ProfileView.as_view(),
         name="profile-page",
     )
 )

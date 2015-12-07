@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'rosters',
+    'bakery',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -102,3 +103,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join('rosters', 'static')
+
+# django-bakery stuff
+
+BUILD_DIR = 'built_pages/'
+
+BAKERY_VIEWS = (
+    'rosters.views.AuditView',
+    'rosters.views.ProfileView',
+    'rosters.views.BibleView',
+)

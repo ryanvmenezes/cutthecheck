@@ -2,37 +2,47 @@ from __future__ import division
 import calculate
 from rosters.models import Squad, Player, LastUpdated
 from django.db.models import Count, Sum
-from django.views.generic import TemplateView
+from bakery.views import BuildableListView, BuildableDetailView
+# from django.views.generic import TemplateView
 
 
 last_updated = LastUpdated.objects.all()[0]
 
-class AuditView(TemplateView):
+class AuditView(BuildableListView):
+    '''
+    An audit of the salry figures for 10 fantasy teams
+    '''
+    build_path = 'cutthecheck/audit.html'
     template_name = 'audit.html'
-    def get_context_data(self):
-        squad_list = Squad.objects.all().order_by('-total_cap_hit')
-        context = {
-            'squad_list': squad_list,
+    queryset = Squad.objects.all().order_by('-total_cap_hit')
+    def get_context_data(self, **kwargs):
+        context = super(AuditView, self).get_context_data(**kwargs)
+        context.update({
             'last_updated': last_updated,
-        }
+        })
         return context
 
-class DetailView(TemplateView):
+class ProfileView(BuildableDetailView):
+    '''
+    Profile pages for each team
+    '''
+    build_path = 'cutthecheck/detail.html'
     template_name = 'detail.html'
-    def get_context_data(self, manager):
-        squad = Squad.objects.get(slug=manager)
-        context = {
-            'squad': squad,
+    model = Squad
+    def get_context_data(self, **kwargs):
+        context = super(ProfileView, self).get_context_data(**kwargs)
+        context.update({
             'last_updated': last_updated,
-        }
+        })
         return context
 
-class BibleView(TemplateView):
+class BibleView(BuildableListView):
+    build_path = 'cutthecheck/bible.html'
     template_name = 'bible.html'
-    def get_context_data(self):
-        players = Player.objects.order_by('nba_team', '-salary_1516')
-        context = {
-            'players': players,
+    queryset = Player.objects.order_by('nba_team', '-salary_1516')
+    def get_context_data(self, **kwargs):
+        context = super(BibleView, self).get_context_data(**kwargs)
+        context.update({
             'last_updated': last_updated,
-        }
+        })
         return context
