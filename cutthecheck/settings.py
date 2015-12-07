@@ -14,6 +14,12 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SETTINGS_DIR = os.path.dirname(os.path.realpath(__file__))
+ROOT_PATH = os.path.join(
+    os.path.abspath(
+        os.path.join(SETTINGS_DIR, os.path.pardir),
+    ),
+)
 
 
 # Quick-start development settings - unsuitable for production
@@ -102,16 +108,25 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+STATIC_ROOT = os.path.join(ROOT_PATH, 'static')
 STATIC_URL = '/static/'
-
-STATIC_ROOT = os.path.join('rosters', 'static')
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+STATICFILES_DIRS = (
+    os.path.join(ROOT_PATH, 'templates', 'static'),
+)
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # 'compressor.finders.CompressorFinder',
+)
+AUTOCOMPLETE_MEDIA_PREFIX = '/static/autocomplete/'
 
 # django-bakery stuff
 
-BUILD_DIR = 'built_pages/'
+BUILD_DIR = os.path.join(BASE_DIR, 'build')
 
 BAKERY_VIEWS = (
     'rosters.views.AuditView',
-    'rosters.views.ProfileView',
     'rosters.views.BibleView',
+    'rosters.views.ProfileView',
 )

@@ -44,7 +44,7 @@ class Squad(BuildableModel):
     slug = models.SlugField(unique=False, db_index=True)
 
     def __unicode__(self):
-        return self.manager
+        return self.get_manager_display()
 
     @property
     def cap_room(self):

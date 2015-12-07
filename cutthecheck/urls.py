@@ -20,8 +20,8 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.AuditView.as_view(), name="league-audit"),
-    url(r'^bible/', views.BibleView.as_view(), name='salary-bible'),
+    url(r'^audit/$', views.AuditView.as_view(), name="league-audit"),
+    url(r'^bible/$', views.BibleView.as_view(), name='salary-bible'),
     url(
         r'^detail/(?P<slug>[-_\w]+)/$',
         views.ProfileView.as_view(),
