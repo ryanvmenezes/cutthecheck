@@ -6,4 +6,4 @@ tokenfile.txt
 rosters/management/commands/league_rosters.csv
 rosters/management/commands/all_salaries.csv
 build/*
-db.sqlite3
+*.sqlite3
