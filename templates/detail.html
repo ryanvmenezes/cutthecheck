@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load humanize %}
 
+{% block title %}{{ squad.get_manager_display }}{% endblock %}
+
 {% block body %}
 <div class="row-fluid">
     <h1 style="margin-bottom:15px;">Team detail: {{ squad.get_manager_display }}</h1>
@@ -21,7 +23,16 @@
     		<td class="right">${{ obj.salary_1516|intcomma }}</td>
 		</tr>
 	    {% endfor %}
+	    <tr>
+	    	<td></td>
+	    	<td class="right"><b>Total cap hit</b>
+	    	<td class="right"><b>${{ squad.total_cap_hit|intcomma }}</b>
+	    </tr>
+	    <tr>
+	    	<td></td>
+	    	<td class="right"><b>Cap room</b>
+	    	<td class="right"><b>${{ squad.cap_room|intcomma }}</b></td>
+	    </tr>
 	</table>
 </div>
-<p><strong><a href="{% url 'league-audit' %}">Back to audit</a></strong></p>
 {% endblock %}

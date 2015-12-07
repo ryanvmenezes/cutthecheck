@@ -30,6 +30,8 @@ class Squad(models.Model):
         default=0
     )
 
+    slug = models.SlugField(unique=False, db_index=True)
+
     def __unicode__(self):
         return self.manager
 

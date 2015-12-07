@@ -1,6 +1,6 @@
 from __future__ import division
 import calculate
-from rosters.models import Squad, LastUpdated
+from rosters.models import Squad, Player, LastUpdated
 from django.db.models import Count, Sum
 from django.views.generic import TemplateView
 
@@ -20,10 +20,18 @@ class AuditView(TemplateView):
 class DetailView(TemplateView):
     template_name = 'detail.html'
     def get_context_data(self, manager):
-        squad = Squad.objects.get(id=manager)
-        players = Squad.objects.all()
+        squad = Squad.objects.get(slug=manager)
         context = {
             'squad': squad,
+            'last_updated': last_updated,
+        }
+        return context
+
+class BibleView(TemplateView):
+    template_name = 'bible.html'
+    def get_context_data(self):
+        players = Player.objects.order_by('nba_team', '-salary_1516')
+        context = {
             'players': players,
             'last_updated': last_updated,
         }

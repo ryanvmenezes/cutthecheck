@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %}Salary Bible{% endblock %}
+
+{% block body %}
+<div class="row-fluid">
+    <h1 style="margin-bottom:15px;">Salary Bible</h1>
+</div>
+<div class="row">
+    <table class="table span9">
+        <thead>
+        <tr>
+            <th>Player</th>
+            <th>NBA team</th>
+            <th class="right">Total salary</th>
+            <th>Manager</th>
+        </tr>
+        </thead>
+        {% for obj in players %}
+        <tr>
+            <td>{{ obj.full_name }}</td>
+            <td>{{ obj.nba_team }}</td>
+            <td class="right">${{ obj.salary_1516|intcomma }}</td>
+            <td><a href="../detail/{{ obj.manager.slug }}">{{ obj.manager.get_manager_display }}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

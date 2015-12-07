@@ -6,6 +6,7 @@ from django.core.management.base import BaseCommand
 from yahooapi import YahooAPI
 from rosters.models import Squad, Player, LastUpdated
 from datetime import datetime
+from django.template.defaultfilters import slugify
 
 class Command(BaseCommand):
     """
@@ -83,6 +84,7 @@ class Command(BaseCommand):
             squad_obj = Squad(
                 manager=manager_nickname,
             )
+            squad_obj.slug = slugify(squad_obj.get_manager_display())
             squad_obj.save()
 
             # Yahoo names --> spotrac names
