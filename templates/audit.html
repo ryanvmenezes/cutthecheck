@@ -16,7 +16,7 @@
         </thead>
         {% for obj in squad_list %}
         <tr>
-            <td><a href="../{{ obj.id }}">{{ obj.get_manager_display }}</a></td>
+            <td><a href="../detail/{{ obj.id }}">{{ obj.get_manager_display }}</a></td>
             <td class="right">${{ obj.total_cap_hit|intcomma }}</td>
             <td class="right" {% if obj.cap_room < 0 %}style="background-color: #ff9999"{% endif %}>${{ obj.cap_room|intcomma }}</td>
         </tr>

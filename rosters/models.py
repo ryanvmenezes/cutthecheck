@@ -61,5 +61,17 @@ class Player(models.Model):
         null=True
     )
 
+    class Meta:
+        ordering = ["-salary_1516"]
+
     def __unicode__(self):
-        return self.full_name    
+        return self.full_name
+
+class LastUpdated(models.Model):
+    '''
+    When these data were updated last
+    '''
+    last_update = models.DateTimeField(
+        null=True,
+        blank=False,
+    )

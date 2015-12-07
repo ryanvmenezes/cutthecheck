@@ -4,7 +4,8 @@ import re
 from BeautifulSoup import BeautifulSoup
 from django.core.management.base import BaseCommand
 from yahooapi import YahooAPI
-from rosters.models import Squad, Player
+from rosters.models import Squad, Player, LastUpdated
+from datetime import datetime
 
 class Command(BaseCommand):
     """
@@ -19,6 +20,7 @@ class Command(BaseCommand):
         print "flushing databases"
         Squad.objects.all().delete()
         Player.objects.all().delete()
+        LastUpdated.objects.all().delete()
 
         ### Scrape spotrac for cap hits
 
@@ -109,7 +111,11 @@ class Command(BaseCommand):
                 except Player.DoesNotExist:
                     print "No record of {}".format(player_name)
 
-
+        # mark last update
+        last_update_obj = LastUpdated(
+            last_update=datetime.now()
+        )
+        last_update_obj.save()
 
 
 

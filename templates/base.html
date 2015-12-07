@@ -6,9 +6,25 @@
 <link rel="stylesheet" type="text/css" href="http://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
 <link rel="stylesheet" type="text/css" href="http://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-responsive-0.4.5.min.css" />
 
+<div id="tophat-container">
+    <div id="tophat" class="tophat-small">
+        <div class="tophat-chaptering">
+            <div id="tophat-title">Cut The Check II</div>
+            <div class="tophat-chapters">
+                <ul>
+                    <li id="chapter-list"><a href="{% url 'league-audit' %}">League audit</a></li>
+                    <li id="chapter-about"><b><a>Last updated: {{ last_updated.last_update }} PST</a></b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 <body>
+<div class="container" id="container">
 {% block body %}
 {% endblock %}
+</div>
 </body>
 
 </html>

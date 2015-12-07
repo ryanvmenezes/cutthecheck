@@ -20,9 +20,9 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^audit/$', views.IndexView.as_view(), name="league-audit"),
+    url(r'^$', views.AuditView.as_view(), name="league-audit"),
     url(
-        r'^(?P<manager>[-_\w]+)/$',
+        r'^detail/(?P<manager>[-_\w]+)/$',
         views.DetailView.as_view(),
         name="profile-page",
     )
