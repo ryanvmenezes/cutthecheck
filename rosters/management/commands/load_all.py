@@ -9,10 +9,11 @@ from datetime import datetime
 
 class Command(BaseCommand):
     """
-    Load the database in three steps
+    Load the database in three steps:
     1. Input every player from spotrac with their cap hit
     2. Pull the squad managers from Yahoo
     3. For every player on each fantasy squad, find that player and update his squad field
+    Then leave a record for when this was updated.
     """
     def handle(self, *args, **options):
         # purge all records
