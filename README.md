@@ -22,13 +22,13 @@ $ cd repo
 $ pip install -r requirements
 ```
 
-This app populates a small sqlite database. Fire it up.
+This app populates a small sqlite database. It will be created with all the necessary database tables like so:
 
 ```bash
 $ python manage.py migrate
 ```
 
-Then run the loader, which shoves data from Spotrac.com and the league into the database.
+Then run the loader, which shoves data on rosters from the league (using the Yahoo API) and cap hits from Spotrac.com (using a BeautifulSoup scraper) into the database. To be able to read from the Yahoo API, you must have `keyfile.txt` and `tokenfile.txt` in the repo folder.
 
 ```bash
 $ python manage.py load_all
@@ -39,5 +39,13 @@ Fire up a test server.
 $ python manage.py runserver
 ```
 
-Navigate to http://localhost:8000/audit
+Navigate to [http://localhost:8000/](http://localhost:8000/) to see the site in action and ensure the pages are loaded properly.
+
+## Creating flat files
+
+To build the dozen or so pages as flat files, run the following:
+
+```bash
+$ python manage.py build
+```
 
