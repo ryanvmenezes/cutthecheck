@@ -36,7 +36,7 @@ To populate or update the database, run the load command. This shoves data on ro
 $ python manage.py load_all
 ```
 
-Then fire up the local server.
+Then fire up the local server. (Ctrl-C to quit it.)
 ```bash
 $ python manage.py runserver
 ```
@@ -55,6 +55,8 @@ To build the dozen or so pages as flat files, run the following [django-bakery](
 ```bash
 $ python manage.py build
 ```
+
+This should create a `build/` directory that will hold flatfiles. Running `python manage.py buildserver` should allow you to navigate the baked-out files.
 
 ### TK
 
