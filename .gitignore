@@ -6,3 +6,4 @@ rosters/management/commands/league_rosters.csv
 rosters/management/commands/all_salaries.csv
 build/*
 *.sqlite3
+static/*
