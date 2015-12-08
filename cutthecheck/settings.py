@@ -111,13 +111,10 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(ROOT_PATH, 'static')
 STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
-STATICFILES_DIRS = (
-    #os.path.join(ROOT_PATH, 'templates', 'static'),
-)
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # 'compressor.finders.CompressorFinder',
 )
 AUTOCOMPLETE_MEDIA_PREFIX = '/static/autocomplete/'
 

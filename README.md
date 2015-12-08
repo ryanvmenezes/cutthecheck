@@ -49,3 +49,6 @@ To build the dozen or so pages as flat files, run the following:
 $ python manage.py build
 ```
 
+### TK
+
+AWS deployment
