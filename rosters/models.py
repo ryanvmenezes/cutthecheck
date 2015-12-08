@@ -46,6 +46,10 @@ class Squad(BuildableModel):
     def __unicode__(self):
         return self.get_manager_display()
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('profile-page', [], dict(slug=self.slug))
+
     @property
     def cap_room(self):
         return 70000000 - self.total_cap_hit
