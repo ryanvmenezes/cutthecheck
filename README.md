@@ -28,22 +28,29 @@ This app populates a small sqlite database. It will be created with all the nece
 $ python manage.py migrate
 ```
 
-Then run the loader, which shoves data on rosters from the league (using the Yahoo API) and cap hits from Spotrac.com (using a BeautifulSoup scraper) into the database. To be able to read from the Yahoo API, you must have `keyfile.txt` and `tokenfile.txt` in the repo folder.
+## Updates
+
+To populate or update the database, run the load command. This shoves data on rosters from the league (using the Yahoo Fantasy API) and cap hits from Spotrac.com (using a BeautifulSoup scraper) into the database. To be able to read from the Yahoo API, you must have `keyfile.txt` and `tokenfile.txt` in the base folder.
 
 ```bash
 $ python manage.py load_all
 ```
 
-Fire up a test server.
+Then fire up the local server.
 ```bash
 $ python manage.py runserver
 ```
 
 Navigate to [http://localhost:8000/](http://localhost:8000/) to see the site in action and ensure the pages are loaded properly.
 
+**Features**
+* A salary audit for the entire league
+* Profile pages for all 10 teams
+* The Salary Bible
+
 ## Creating flat files
 
-To build the dozen or so pages as flat files, run the following:
+To build the dozen or so pages as flat files, run the following [django-bakery](http://django-bakery.readthedocs.org/en/latest/) command:
 
 ```bash
 $ python manage.py build
