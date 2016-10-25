@@ -17,7 +17,7 @@ class AuditView(BuildableListView):
     queryset = Squad.objects.all().order_by('-total_cap_hit')
     build_path = 'cutthecheck/audit/index.html'
     template_name = 'rosters/audit.html'
-    
+
     def get_context_data(self, **kwargs):
         context = super(AuditView, self).get_context_data(**kwargs)
         context.update({
@@ -51,7 +51,7 @@ class BibleView(BuildableListView):
     #     return 'bible'
     build_path = 'cutthecheck/bible/index.html'
     template_name = 'rosters/bible.html'
-    queryset = Player.objects.order_by('nba_team', '-salary_1516')
+    queryset = Player.objects.order_by('nba_team', '-salary')
     def get_context_data(self, **kwargs):
         context = super(BibleView, self).get_context_data(**kwargs)
         context.update({

@@ -14,7 +14,7 @@ class Command(BaseCommand):
         for squad in Squad.objects.all():
         	# print squad.manager
         	for player in squad.player_set.all():
-        		row = [squad.get_manager_display(), player.full_name, player.salary_1516, player.nba_team]
+        		row = [squad.get_manager_display(), player.full_name, player.salary, player.nba_team]
         		csv_writer.writerow(row)
         csv_file.close()
 
@@ -24,6 +24,6 @@ class Command(BaseCommand):
         header = ['player', 'salary', 'team']
         csv_writer.writerow(header)
         for player in Player.objects.all():
-        	row = [player.full_name, player.salary_1516, player.nba_team]
+        	row = [player.full_name, player.salary, player.nba_team]
         	csv_writer.writerow(row)
         csv_file.close()

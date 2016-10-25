@@ -57,7 +57,7 @@ class Command(BaseCommand):
                     break
                 player_obj = Player(
                     full_name=full_name,
-                    salary_1516=cap_hit,
+                    salary=cap_hit,
                     nba_team=nba_team,
                 )
                 player_obj.save()
@@ -108,7 +108,7 @@ class Command(BaseCommand):
         #         try:
         #             new_player_obj = Player.objects.get(full_name=player_name)
         #             new_player_obj.manager = squad_obj
-        #             squad_obj.total_cap_hit += new_player_obj.salary_1516
+        #             squad_obj.total_cap_hit += new_player_obj.salary
         #             new_player_obj.save()
         #             squad_obj.save()
         #         except Player.DoesNotExist:

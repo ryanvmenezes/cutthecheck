@@ -21,7 +21,7 @@
         <tr>
             <td>{{ obj.full_name }}</td>
             <td>{{ obj.nba_team }}</td>
-            <td class="right">${{ obj.salary_1516|intcomma }}</td>
+            <td class="right">${{ obj.salary|intcomma }}</td>
             <td><a href="{{ obj.manager.get_absolute_url }}">{{ obj.manager.get_manager_display }}</a></td>
         </tr>
         {% endfor %}
