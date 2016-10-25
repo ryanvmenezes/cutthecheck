@@ -25,7 +25,7 @@ class Squad(BuildableModel):
         ('Ryan Kartje','Ryan Kartje',),
         ('Ryan','Ryan Menezes',),
         ('Justin','Justin Cerri',),
-        ('Vineeth','Vineeth Pillai',),
+        ('Christian M','Christian Mikkelson',),
         # (None, "FA")
     )
 
@@ -52,8 +52,8 @@ class Squad(BuildableModel):
 
     @property
     def cap_room(self):
-        return 70000000 - self.total_cap_hit
-    
+        return 94143000 - self.total_cap_hit
+
 
 class Player(BuildableModel):
     '''
@@ -78,7 +78,7 @@ class Player(BuildableModel):
         help_text="NBA player's team",
     )
 
-    salary_1516 = models.IntegerField(
+    salary = models.IntegerField(
         null=True,
         help_text="Cap hit for this player",
     )
@@ -88,8 +88,20 @@ class Player(BuildableModel):
         null=True
     )
 
+    draft_round = models.IntegerField(
+        null=True,
+        help_text='Round this player was drafted',
+        choices=[(i,i) for i in range(12)],
+    )
+
+    draft_pick = models.IntegerField(
+        null=True,
+        help_text='Pick within round this player was drafted',
+        choices=[(i,i) for i in range(1,12)],
+    )
+
     class Meta:
-        ordering = ["-salary_1516"]
+        ordering = ["-salary"]
 
     def __unicode__(self):
         return self.full_name
