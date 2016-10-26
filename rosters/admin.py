@@ -38,4 +38,4 @@ class PlayerAdmin(admin.ModelAdmin):
     list_per_page = 5000
     list_display = ("full_name", "nba_team", "manager", "salary", "draft_round", "draft_pick")
     list_editable = ("manager", "draft_round", "draft_pick")
-    ordering = ["-manager","-salary"]
+    ordering = ["nba_team","-salary"]
