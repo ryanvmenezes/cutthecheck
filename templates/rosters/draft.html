@@ -1,0 +1,41 @@
+{% extends 'rosters/base.html' %}
+{% load humanize %}
+
+{% block title %}2016-17 Draft{% endblock %}
+
+{% block body %}
+<div class="row-fluid">
+    <h1 style="margin-bottom:15px;">2016-17 Draft</h1>
+</div>
+<div class="row">
+    <table class="table span9">
+        <thead>
+        <tr>
+            <th>Round</th>
+            <th>Pick</th>
+            <th>Player</th>
+            <th>NBA team</th>
+            <th class="right">Total salary</th>
+            <th>Manager</th>
+        </tr>
+        </thead>
+        {% for obj in player_list %}
+            {% if obj.draft_round != None %}
+              <tr>
+                {% if obj.draft_round == 0 %}
+                <td>kept</td>
+                <td></td>
+                {% else %}
+                <td>{{ obj.draft_round }}</td>
+                <td>{{ obj.draft_pick }}</td>
+                {% endif %}
+                <td>{{ obj.full_name }}</td>
+                <td>{{ obj.nba_team }}</td>
+                <td class="right">${{ obj.salary|intcomma }}</td>
+                <td><a href="{{ obj.manager.get_absolute_url }}">{{ obj.manager.get_manager_display }}</a></td>
+              </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

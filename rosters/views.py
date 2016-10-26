@@ -12,7 +12,7 @@ last_updated = LastUpdated.objects.all()[0]
 
 class AuditView(BuildableListView):
     '''
-    An audit of the salry figures for 10 fantasy teams
+    An audit of the salary figures for 10 fantasy teams
     '''
     queryset = Squad.objects.all().order_by('-total_cap_hit')
     build_path = 'cutthecheck/audit/index.html'
@@ -46,14 +46,28 @@ class ProfileView(BuildableDetailView):
         return context
 
 class BibleView(BuildableListView):
-    # def get_url(self, obj):
-    #     # The URL at which the bible page should appear.
-    #     return 'bible'
+    '''
+    The salary bible
+    '''
     build_path = 'cutthecheck/bible/index.html'
     template_name = 'rosters/bible.html'
     queryset = Player.objects.order_by('nba_team', '-salary')
     def get_context_data(self, **kwargs):
         context = super(BibleView, self).get_context_data(**kwargs)
+        context.update({
+            'last_updated': last_updated,
+        })
+        return context
+
+class DraftView(BuildableListView):
+    '''
+    The draft
+    '''
+    build_path = 'cutthecheck/draft/index.html'
+    template_name = 'rosters/draft.html'
+    queryset = Player.objects.order_by('manager', 'draft_round', 'draft_pick')
+    def get_context_data(self, **kwargs):
+        context = super(DraftView, self).get_context_data(**kwargs)
         context.update({
             'last_updated': last_updated,
         })

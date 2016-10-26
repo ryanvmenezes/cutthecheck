@@ -27,5 +27,10 @@ urlpatterns = patterns('',
         r'^cutthecheck/detail/(?P<slug>[-_\w]+)/$',
         views.ProfileView.as_view(),
         name="profile-page",
-    )
+    ),
+    url(
+        r'^cutthecheck/draft/$',
+        views.DraftView.as_view(),
+        name='draft-1617'
+    ),
 )
