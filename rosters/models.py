@@ -107,6 +107,29 @@ class Player(BuildableModel):
     def __unicode__(self):
         return self.full_name
 
+# class DraftPick(BuildableModel):
+#     draft_round = models.IntegerField(
+#         null=True,
+#         help_text='Round this player was drafted',
+#         choices=[(i,i) for i in range(12)],
+#     )
+#
+#     draft_pick = models.IntegerField(
+#         null=True,
+#         help_text='Pick within round this player was drafted',
+#         choices=[(i,i) for i in range(1,11)],
+#     )
+#
+#     player = models.ForeignKey(
+#         Player,
+#         null=True
+#     )
+#
+#     squad = models.ForeignKey(
+#         Squad,
+#         null=True
+#     )
+
 
 class LastUpdated(BuildableModel):
     '''
