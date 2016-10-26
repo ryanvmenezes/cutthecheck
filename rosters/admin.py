@@ -30,11 +30,12 @@ class SquadAdmin(admin.ModelAdmin):
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
     readonly_fields = (
-        "manager",
+        # "manager",
         "full_name",
         "nba_team",
         "salary",
     )
+    list_per_page = 5000
     list_display = ("full_name", "nba_team", "manager", "salary", "draft_round", "draft_pick")
     list_editable = ("manager", "draft_round", "draft_pick")
     ordering = ["-manager","-salary"]

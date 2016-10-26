@@ -7,3 +7,4 @@ rosters/management/commands/league_rosters.csv
 rosters/management/commands/all_salaries.csv
 *.sqlite3
 static/*
+build_and_copy.sh

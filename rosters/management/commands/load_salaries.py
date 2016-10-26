@@ -3,7 +3,8 @@ import time
 import re
 from django.core.management.base import BaseCommand
 from BeautifulSoup import BeautifulSoup
-from rosters.models import Player
+from rosters.models import Player, LastUpdated
+from datetime import datetime
 
 class Command(BaseCommand):
     """
@@ -57,3 +58,9 @@ class Command(BaseCommand):
                 )
                 player_obj.save()
             time.sleep(2)
+
+        # mark last update
+        last_update_obj = LastUpdated(
+          last_update=datetime.now()
+        )
+        last_update_obj.save()

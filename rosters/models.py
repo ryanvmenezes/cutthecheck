@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Sum
 from bakery.models import BuildableModel
 
 # Create your models here.
@@ -105,6 +106,7 @@ class Player(BuildableModel):
 
     def __unicode__(self):
         return self.full_name
+
 
 class LastUpdated(BuildableModel):
     '''
