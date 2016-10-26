@@ -85,6 +85,7 @@ class Command(BaseCommand):
                         print "No record of {}".format(player_name)
 
             # mark last update
+            LastUpdated.objects.all().delete()
             last_update_obj = LastUpdated(
               last_update=datetime.now()
             )

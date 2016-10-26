@@ -60,6 +60,7 @@ class Command(BaseCommand):
             time.sleep(2)
 
         # mark last update
+        LastUpdated.objects.all().delete()
         last_update_obj = LastUpdated(
           last_update=datetime.now()
         )

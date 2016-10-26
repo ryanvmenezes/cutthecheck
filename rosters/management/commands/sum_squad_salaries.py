@@ -21,6 +21,7 @@ class Command(BaseCommand):
                 s.save()
 
         # mark last update
+        LastUpdated.objects.all().delete()
         last_update_obj = LastUpdated(
           last_update=datetime.now()
         )
