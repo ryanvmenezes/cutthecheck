@@ -10,7 +10,6 @@ class Command(BaseCommand):
     '''
     def handle(self, *args, **options):
 
-        draft = []
         with open('rosters/management/commands/league_draft.csv', 'r') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
@@ -22,3 +21,11 @@ class Command(BaseCommand):
                 player_obj.draft_pick = row['draft_pick']
                 player_obj.save()
                 squad_obj.save()
+
+        LastUpdated.objects.all().delete()
+
+        # mark last update
+        last_update_obj = LastUpdated(
+          last_update=datetime.now()
+        )
+        last_update_obj.save()

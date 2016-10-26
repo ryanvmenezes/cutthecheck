@@ -65,7 +65,7 @@ class DraftView(BuildableListView):
     '''
     build_path = 'cutthecheck/draft/index.html'
     template_name = 'rosters/draft.html'
-    queryset = Player.objects.order_by('manager', 'draft_round', 'draft_pick')
+    queryset = Player.objects.order_by('draft_round', 'draft_pick', 'manager',)
     def get_context_data(self, **kwargs):
         context = super(DraftView, self).get_context_data(**kwargs)
         context.update({

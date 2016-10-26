@@ -1,21 +1,27 @@
 manager,player,salary,team,draft_round,draft_pick
 Austin,Blake Griffin,20140838,los angeles clippers,0,1
 Austin,DeMarcus Cousins,16957900,sacramento kings,0,2
+Austin,Joel Embiid,4826160,philadelphia 76ers,1,5
 Austin,Giannis Antetokounmpo,2995421,milwaukee bucks,0,3
 sam,Anthony Davis,22116750,new orleans pelicans,0,1
 sam,Jimmy Butler,17552209,chicago bulls,0,2
+sam,Kemba Walker,12000000,charlotte hornets,1,7
 sam,Kyle Lowry,12000000,toronto raptors,0,3
 eli,Paul George,18314532,indiana pacers,0,1
+eli,Kyrie Irving,17638063,cleveland cavaliers,1,6
 eli,Kawhi Leonard,17638063,san antonio spurs,0,2
 eli,Aaron Gordon,4351320,orlando magic,0,3
+Pedro Moura,Kevin Durant,26540100,golden state warriors,1,9
 Pedro Moura,Victor Oladipo,6552960,oklahoma city thunder,0,1
 Pedro Moura,Kristaps Porzingis,4317720,new york knicks,0,2
 Pedro Moura,C.J. McCollum,3219579,portland trail blazers,0,3
 Zach,Russell Westbrook,26540100,oklahoma city thunder,0,1
 Zach,Karl-Anthony Towns,5960160,minnesota timberwolves,0,2
 Zach,Rudy Gobert,2121288,utah jazz,0,3
+Zach,Clint Capela,1296240,houston rockets,1,8
 Everett,LeBron James,30963450,cleveland cavaliers,0,1
 Everett,John Wall,16957900,washington wizards,0,2
+Everett,Brandon Ingram,5281680,los angeles lakers,1,4
 Everett,Gorgui Dieng,2348783,minnesota timberwolves,0,3
 Ryan Kartje,James Harden,26540100,houston rockets,0,1
 Ryan Kartje,Draymond Green,15330435,golden state warriors,0,2
@@ -23,9 +29,12 @@ Ryan Kartje,Nikola Jokic,1358500,denver nuggets,0,3
 Ryan,Al Horford,26540100,boston celtics,0,1
 Ryan,Stephen Curry,12112359,golden state warriors,0,2
 Ryan,Julius Randle,3267120,los angeles lakers,0,3
+Ryan,Devin Booker,2223600,phoenix suns,1,3
+Justin,Damian Lillard,24328425,portland trail blazers,1,2
 Justin,Klay Thompson,16663575,golden state warriors,0,1
 Justin,Andrew Wiggins,6006600,minnesota timberwolves,0,2
 Justin,Jabari Parker,5374320,milwaukee bucks,0,3
+Christian M,Isaiah Thomas,6587132,boston celtics,1,1
 Christian M,Dennis Schroder,2708582,atlanta hawks,0,1
 Christian M,Jusuf Nurkic,1921320,denver nuggets,0,2
 Christian M,Rodney Hood,1406520,utah jazz,0,3
