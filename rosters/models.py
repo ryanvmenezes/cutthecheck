@@ -118,6 +118,12 @@ class DraftPick(BuildableModel):
         null=True
     )
 
+    note = models.CharField(
+        max_length=500,
+        null=True,
+        help_text="Note about this pick",
+    )
+
 
 class LastUpdated(BuildableModel):
     '''
