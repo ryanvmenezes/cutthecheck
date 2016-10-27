@@ -12,6 +12,7 @@
         <thead>
         <tr>
             <th>Manager</th>
+            <th class="right">Total players</th>
             <th class="right">Total salary</th>
             <th class="right">Room below cap</th>
         </tr>
@@ -19,6 +20,7 @@
         {% for obj in squad_list %}
         <tr>
             <td><a href="{{ obj.get_absolute_url }}">{{ obj.get_manager_display }}</a></td>
+            <td class="right">{{ obj.player_set.all.count}}</td>
             <td class="right">${{ obj.total_cap_hit|intcomma }}</td>
             <td class="right" {% if obj.cap_room < 0 %}style="background-color: #ff9999"{% endif %}>${{ obj.cap_room|intcomma }}</td>
         </tr>
@@ -26,4 +28,3 @@
     </table>
 </div>
 {% endblock %}
-

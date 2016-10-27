@@ -5,5 +5,4 @@ tokenfile.txt
 build/*
 *.sqlite3
 static/*
-build_and_copy.sh
 *.~lock*#

@@ -1,12 +1,12 @@
 # cutthecheck
 
-An app to track the nerdiest fantasy basketball league.
+A Django app to track the nerdiest fantasy basketball league.
 
 Requirements:
 
 * Python (2.7)
 * virtualenv
-* Git
+* git
 * files with the keys and tokens needed to interact with the Yahoo! Fantasy API
 
 ## Getting started
@@ -27,6 +27,33 @@ This app populates a small sqlite database. It will be created with all the nece
 ```bash
 $ python manage.py migrate
 ```
+
+## Management commands
+
+### Starting from scratch
+
+`python manage.py load_salaries`
+* Downloads the freshest cap hits from [spotrac](http://www.spotrac.com/nba/cap/) using a BeautifulSoup scraper
+
+`python manage.py load_squads --blank`
+* Populates teams from the Yahoo league and attempts to merge it with existing cap data. The `--blank` flag creates empty teams. To be able to read from the Yahoo API, you must have `keyfile.txt` and `tokenfile.txt` in the base folder.
+
+`python manage.py load_draft_file`
+* Update the draft results from a flat file
+
+`python manage.py sum_squad_salaries`
+* A manual push to save the salaries for each team
+
+### Saving work
+
+`python manage.py dump_salaries`
+* Save the "Salary Bible"
+
+`python manage.py dump_draft_file`
+* Save the progress of the draft
+
+
+
 
 ## Updates
 

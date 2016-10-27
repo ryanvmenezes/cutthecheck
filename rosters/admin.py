@@ -55,3 +55,6 @@ class DraftPickAdmin(admin.ModelAdmin):
     readonly_fields = ("note",)
     list_editable = ("player",)
     ordering = ["draft_round","draft_pick","squad"]
+    list_display = ("full_name", "nba_team", "manager", "salary", "draft_round", "draft_pick")
+    list_editable = ("manager", "draft_round", "draft_pick")
+    ordering = ["nba_team","-salary"]

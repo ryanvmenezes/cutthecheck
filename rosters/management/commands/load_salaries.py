@@ -4,7 +4,7 @@ import re
 from django.core.management.base import BaseCommand
 from BeautifulSoup import BeautifulSoup
 from rosters.models import Player, LastUpdated
-from datetime import datetime
+from django.utils import timezone
 
 class Command(BaseCommand):
     """
@@ -62,6 +62,6 @@ class Command(BaseCommand):
         # mark last update
         LastUpdated.objects.all().delete()
         last_update_obj = LastUpdated(
-          last_update=datetime.now()
+          last_update=timezone.now()
         )
         last_update_obj.save()
