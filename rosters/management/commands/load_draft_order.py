@@ -10,9 +10,10 @@ class Command(BaseCommand):
     docstring
     '''
     def handle(self, *args, **options):
+        FILE_PATH = 'rosters/management/commands/draft_order.csv'
 
         DraftPick.objects.all().delete()
-        with open('rosters/management/commands/draft_order.csv', 'r') as csvfile:
+        with open(FILE_PATH, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 print 'trying round {} pick {} manager {} player {}'\
@@ -43,16 +44,29 @@ class Command(BaseCommand):
                 player_obj.save()
                 new_pick_obj.save()
 
-            for s in Squad.objects.all():
-                print 'summing {}'.format(s)
+        for s in Squad.objects.all():
+            print 'summing {}'.format(s)
 
-                players = Player.objects.filter(manager__manager=s.manager)
+            players = Player.objects.filter(manager__manager=s.manager)
 
-                if len(players) != 0:
-                    total = 0
-                    total += players.aggregate(Sum('salary'))['salary__sum']
-                    s.total_cap_hit = total
-                    s.save()
+            if len(players) != 0:
+                total = 0
+                total += players.aggregate(Sum('salary'))['salary__sum']
+                s.total_cap_hit = total
+                s.save()
 
+        with open(FILE_PATH, 'w+') as csvfile:
+            csvwriter = csv.writer(csvfile)
+            csvwriter.writerow(['round','pick','manager','player','salary','team','note'])
             for p in DraftPick.objects.order_by('draft_round','draft_pick','squad'):
-                print p.draft_round, p.draft_pick, p.player, p.squad, p.player.salary
+                csvwriter.writerow(
+                    [
+                        p.draft_round,
+                        p.draft_pick,
+                        p.squad,
+                        p.player if p.player else '',
+                        p.player.salary if p.player else '',
+                        p.player.nba_team if p.player else '',
+                        p.note,
+                    ]
+                )
