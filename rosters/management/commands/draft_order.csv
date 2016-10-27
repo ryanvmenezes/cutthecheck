@@ -1,111 +1,111 @@
 round,pick,manager,player,salary,team,note
-0,1,Austin Manapsal,Blake Griffin,20140838,los angeles clippers,kept
-0,1,Sam Tesconi,Anthony Davis,22116750,new orleans pelicans,kept
-0,1,Eli Smukler,Paul George,18314532,indiana pacers,kept
+0,1,Austin,Blake Griffin,20140838,los angeles clippers,kept
+0,1,sam,Anthony Davis,22116750,new orleans pelicans,kept
+0,1,eli,Paul George,18314532,indiana pacers,kept
 0,1,Pedro Moura,Victor Oladipo,6552960,oklahoma city thunder,kept
-0,1,Zach Helfand,Russell Westbrook,26540100,oklahoma city thunder,kept
-0,1,Everett Cook,LeBron James,30963450,cleveland cavaliers,kept
+0,1,Zach,Russell Westbrook,26540100,oklahoma city thunder,kept
+0,1,Everett,LeBron James,30963450,cleveland cavaliers,kept
 0,1,Ryan Kartje,James Harden,26540100,houston rockets,kept
-0,1,Ryan Menezes,Al Horford,26540100,boston celtics,kept
-0,1,Justin Cerri,Klay Thompson,16663575,golden state warriors,kept
-0,1,Christian Mikkelson,Dennis Schroder,2708582,atlanta hawks,kept
-0,2,Austin Manapsal,DeMarcus Cousins,16957900,sacramento kings,kept
-0,2,Sam Tesconi,Jimmy Butler,17552209,chicago bulls,kept
-0,2,Eli Smukler,Kawhi Leonard,17638063,san antonio spurs,kept
+0,1,Ryan,Al Horford,26540100,boston celtics,kept
+0,1,Justin,Klay Thompson,16663575,golden state warriors,kept
+0,1,Christian M,Dennis Schroder,2708582,atlanta hawks,kept
+0,2,Austin,DeMarcus Cousins,16957900,sacramento kings,kept
+0,2,sam,Jimmy Butler,17552209,chicago bulls,kept
+0,2,eli,Kawhi Leonard,17638063,san antonio spurs,kept
 0,2,Pedro Moura,Kristaps Porzingis,4317720,new york knicks,kept
-0,2,Zach Helfand,Karl-Anthony Towns,5960160,minnesota timberwolves,kept
-0,2,Everett Cook,John Wall,16957900,washington wizards,kept
+0,2,Zach,Karl-Anthony Towns,5960160,minnesota timberwolves,kept
+0,2,Everett,John Wall,16957900,washington wizards,kept
 0,2,Ryan Kartje,Draymond Green,15330435,golden state warriors,kept
-0,2,Ryan Menezes,Stephen Curry,12112359,golden state warriors,kept
-0,2,Justin Cerri,Andrew Wiggins,6006600,minnesota timberwolves,kept
-0,2,Christian Mikkelson,Jusuf Nurkic,1921320,denver nuggets,kept
-0,3,Austin Manapsal,Giannis Antetokounmpo,2995421,milwaukee bucks,kept
-0,3,Sam Tesconi,Kyle Lowry,12000000,toronto raptors,kept
-0,3,Eli Smukler,Aaron Gordon,4351320,orlando magic,kept
+0,2,Ryan,Stephen Curry,12112359,golden state warriors,kept
+0,2,Justin,Andrew Wiggins,6006600,minnesota timberwolves,kept
+0,2,Christian M,Jusuf Nurkic,1921320,denver nuggets,kept
+0,3,Austin,Giannis Antetokounmpo,2995421,milwaukee bucks,kept
+0,3,sam,Kyle Lowry,12000000,toronto raptors,kept
+0,3,eli,Aaron Gordon,4351320,orlando magic,kept
 0,3,Pedro Moura,C.J. McCollum,3219579,portland trail blazers,kept
-0,3,Zach Helfand,Rudy Gobert,2121288,utah jazz,kept
-0,3,Everett Cook,Gorgui Dieng,2348783,minnesota timberwolves,kept
+0,3,Zach,Rudy Gobert,2121288,utah jazz,kept
+0,3,Everett,Gorgui Dieng,2348783,minnesota timberwolves,kept
 0,3,Ryan Kartje,Nikola Jokic,1358500,denver nuggets,kept
-0,3,Ryan Menezes,Julius Randle,3267120,los angeles lakers,kept
-0,3,Justin Cerri,Jabari Parker,5374320,milwaukee bucks,kept
-0,3,Christian Mikkelson,Rodney Hood,1406520,utah jazz,kept
-1,1,Christian Mikkelson,Isaiah Thomas,6587132,boston celtics,
-1,2,Justin Cerri,Damian Lillard,24328425,portland trail blazers,
-1,3,Ryan Menezes,Devin Booker,2223600,phoenix suns,
-1,4,Everett Cook,Brandon Ingram,5281680,los angeles lakers,
-1,5,Austin Manapsal,Joel Embiid,4826160,philadelphia 76ers,
-1,6,Eli Smukler,Kyrie Irving,17638063,cleveland cavaliers,
-1,7,Sam Tesconi,Kemba Walker,12000000,charlotte hornets,
-1,8,Zach Helfand,Clint Capela,1296240,houston rockets,
+0,3,Ryan,Julius Randle,3267120,los angeles lakers,kept
+0,3,Justin,Jabari Parker,5374320,milwaukee bucks,kept
+0,3,Christian M,Rodney Hood,1406520,utah jazz,kept
+1,1,Christian M,Isaiah Thomas,6587132,boston celtics,
+1,2,Justin,Damian Lillard,24328425,portland trail blazers,
+1,3,Ryan,Devin Booker,2223600,phoenix suns,
+1,4,Everett,Brandon Ingram,5281680,los angeles lakers,
+1,5,Austin,Joel Embiid,4826160,philadelphia 76ers,
+1,6,eli,Kyrie Irving,17638063,cleveland cavaliers,
+1,7,sam,Kemba Walker,12000000,charlotte hornets,
+1,8,Zach,Clint Capela,1296240,houston rockets,
 1,9,Pedro Moura,Kevin Durant,26540100,golden state warriors,
 1,10,Ryan Kartje,D'Angelo Russell,5332800,los angeles lakers,
-2,1,Christian Mikkelson,Steven Adams,3140517,oklahoma city thunder,
-2,2,Justin Cerri,Derrick Favors,11050000,utah jazz,
-2,3,Ryan Menezes,Chris Paul,22868828,los angeles clippers,
-2,4,Everett Cook,Dario Saric,2318280,philadelphia 76ers,
-2,5,Austin Manapsal,Will Barton,3533333,denver nuggets,
-2,6,Eli Smukler,Jae Crowder,6286408,boston celtics,
-2,7,Sam Tesconi,,,,
-2,8,Zach Helfand,,,,
-2,9,Pedro Moura,,,,
-2,10,Ryan Kartje,,,,
-3,1,Christian Mikkelson,,,,
-3,2,Justin Cerri,,,,
-3,3,Ryan Menezes,,,,
-3,4,Everett Cook,,,,
-3,5,Austin Manapsal,,,,
-3,6,Eli Smukler,,,,
-3,7,Sam Tesconi,,,,
-3,8,Zach Helfand,,,,
-3,9,Pedro Moura,,,,
-3,10,Ryan Kartje,,,,
-4,1,Ryan Kartje,,,,
-4,2,Pedro Moura,,,,
-4,3,Zach Helfand,,,,Traded
-4,4,Sam Tesconi,,,,
-4,5,Eli Smukler,,,,
-4,6,Austin Manapsal,,,,
-4,7,Everett Cook,,,,
-4,8,Ryan Menezes,,,,
-4,9,Justin Cerri,,,,
-4,10,Christian Mikkelson,,,,
-5,1,Christian Mikkelson,,,,
-5,2,Justin Cerri,,,,
-5,3,Ryan Menezes,,,,
-5,4,Everett Cook,,,,
-5,5,Austin Manapsal,,,,
-5,6,Eli Smukler,,,,
-5,7,Justin Cerri,,,,Traded
-5,8,Zach Helfand,,,,
+2,1,Christian M,Steven Adams,3140517,oklahoma city thunder,
+2,2,Justin,Derrick Favors,11050000,utah jazz,
+2,3,Ryan,Chris Paul,22868828,los angeles clippers,
+2,4,Everett,Dario Saric,2318280,philadelphia 76ers,
+2,5,Austin,Will Barton,3533333,denver nuggets,
+2,6,eli,Jae Crowder,6286408,boston celtics,
+2,7,sam,Myles Turner,2463840,indiana pacers,
+2,8,Zach,Zach LaVine,2240880,minnesota timberwolves,
+2,9,Pedro Moura,Jahlil Okafor,4788840,philadelphia 76ers,
+2,10,Ryan Kartje,Serge Ibaka,12250000,orlando magic,
+3,1,Christian M,Eric Bledsoe,14000000,phoenix suns,
+3,2,Justin,Andrew Bogut,11027027,dallas mavericks,
+3,3,Ryan,George Hill,8000000,utah jazz,
+3,4,Everett,Jonathon Simmons,874636,san antonio spurs,
+3,5,Austin,Nikola Vucevic,11750000,orlando magic,
+3,6,eli,Emmanuel Mudiay,3241800,denver nuggets,
+3,7,sam,JaMychal Green,980431,memphis grizzlies,
+3,8,Zach,Jeff Teague,8800000,indiana pacers,
+3,9,Pedro Moura,Otto Porter Jr.,5893981,washington wizards,
+3,10,Ryan Kartje,Justise Winslow,2593440,miami heat,
+4,1,Ryan Kartje,Buddy Hield,3517200,new orleans pelicans,
+4,2,Pedro Moura,Trevor Ariza,7806971,houston rockets,
+4,3,Ryan Kartje,,,,Traded
+4,4,sam,,,,
+4,5,eli,,,,
+4,6,Austin,,,,
+4,7,Everett,,,,
+4,8,Ryan,,,,
+4,9,Justin,,,,
+4,10,Christian M,,,,
+5,1,Christian M,,,,
+5,2,Justin,,,,
+5,3,Ryan,,,,
+5,4,Everett,,,,
+5,5,Austin,,,,
+5,6,eli,,,,
+5,7,Justin,,,,Traded
+5,8,Zach,,,,
 5,9,Pedro Moura,,,,
 5,10,Ryan Kartje,,,,
-6,1,Zach Helfand,,,,Traded
+6,1,Zach,,,,Traded
 6,2,Pedro Moura,,,,
-6,3,Zach Helfand,,,,
-6,4,Sam Tesconi,,,,
-6,5,Eli Smukler,,,,
-6,6,Austin Manapsal,,,,
-6,7,Everett Cook,,,,
-6,8,Ryan Menezes,,,,
-6,9,Justin Cerri,,,,
-6,10,Christian Mikkelson,,,,
-7,1,Christian Mikkelson,,,,
-7,2,Justin Cerri,,,,
-7,3,Ryan Menezes,,,,
-7,4,Everett Cook,,,,
-7,5,Austin Manapsal,,,,
-7,6,Eli Smukler,,,,
-7,7,Sam Tesconi,,,,
-7,8,Zach Helfand,,,,
+6,3,Zach,,,,
+6,4,sam,,,,
+6,5,eli,,,,
+6,6,Austin,,,,
+6,7,Everett,,,,
+6,8,Ryan,,,,
+6,9,Justin,,,,
+6,10,Christian M,,,,
+7,1,Christian M,,,,
+7,2,Justin,,,,
+7,3,Ryan,,,,
+7,4,Everett,,,,
+7,5,Austin,,,,
+7,6,eli,,,,
+7,7,sam,,,,
+7,8,Zach,,,,
 7,9,Pedro Moura,,,,
 7,10,Ryan Kartje,,,,
 8,1,Ryan Kartje,,,,
 8,2,Pedro Moura,,,,
-8,3,Zach Helfand,,,,
-8,4,Sam Tesconi,,,,
-8,5,Eli Smukler,,,,
-8,6,Austin Manapsal,,,,
-8,7,Everett Cook,,,,
-8,8,Ryan Menezes,,,,
-8,9,Justin Cerri,,,,
-8,10,Christian Mikkelson,,,,
+8,3,Zach,,,,
+8,4,sam,,,,
+8,5,eli,,,,
+8,6,Austin,,,,
+8,7,Everett,,,,
+8,8,Ryan,,,,
+8,9,Justin,,,,
+8,10,Christian M,,,,

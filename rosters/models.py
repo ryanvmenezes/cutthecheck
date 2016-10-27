@@ -45,7 +45,7 @@ class Squad(BuildableModel):
     slug = models.SlugField(unique=False, db_index=True)
 
     def __unicode__(self):
-        return self.get_manager_display()
+        return self.manager
 
     @models.permalink
     def get_absolute_url(self):
