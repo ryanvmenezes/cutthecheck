@@ -1,6 +1,7 @@
 manager,player,salary,team,draft_round,draft_pick
 Austin,Blake Griffin,20140838,los angeles clippers,0,1
 Austin,DeMarcus Cousins,16957900,sacramento kings,0,2
+Austin,Nikola Vucevic,11750000,orlando magic,3,5
 Austin,Joel Embiid,4826160,philadelphia 76ers,1,5
 Austin,Will Barton,3533333,denver nuggets,2,5
 Austin,Giannis Antetokounmpo,2995421,milwaukee bucks,0,3
@@ -9,17 +10,21 @@ sam,Jimmy Butler,17552209,chicago bulls,0,2
 sam,Kemba Walker,12000000,charlotte hornets,1,7
 sam,Kyle Lowry,12000000,toronto raptors,0,3
 sam,Myles Turner,2463840,indiana pacers,2,7
+sam,JaMychal Green,980431,memphis grizzlies,3,7
 eli,Paul George,18314532,indiana pacers,0,1
 eli,Kyrie Irving,17638063,cleveland cavaliers,1,6
 eli,Kawhi Leonard,17638063,san antonio spurs,0,2
 eli,Jae Crowder,6286408,boston celtics,2,6
 eli,Aaron Gordon,4351320,orlando magic,0,3
+eli,Emmanuel Mudiay,3241800,denver nuggets,3,6
 Pedro Moura,Kevin Durant,26540100,golden state warriors,1,9
 Pedro Moura,Victor Oladipo,6552960,oklahoma city thunder,0,1
+Pedro Moura,Otto Porter Jr.,5893981,washington wizards,3,9
 Pedro Moura,Jahlil Okafor,4788840,philadelphia 76ers,2,9
 Pedro Moura,Kristaps Porzingis,4317720,new york knicks,0,2
 Pedro Moura,C.J. McCollum,3219579,portland trail blazers,0,3
 Zach,Russell Westbrook,26540100,oklahoma city thunder,0,1
+Zach,Jeff Teague,8800000,indiana pacers,3,8
 Zach,Karl-Anthony Towns,5960160,minnesota timberwolves,0,2
 Zach,Zach LaVine,2240880,minnesota timberwolves,2,8
 Zach,Rudy Gobert,2121288,utah jazz,0,3
@@ -29,6 +34,7 @@ Everett,John Wall,16957900,washington wizards,0,2
 Everett,Brandon Ingram,5281680,los angeles lakers,1,4
 Everett,Gorgui Dieng,2348783,minnesota timberwolves,0,3
 Everett,Dario Saric,2318280,philadelphia 76ers,2,4
+Everett,Jonathon Simmons,874636,san antonio spurs,3,4
 Ryan Kartje,James Harden,26540100,houston rockets,0,1
 Ryan Kartje,Draymond Green,15330435,golden state warriors,0,2
 Ryan Kartje,Serge Ibaka,12250000,orlando magic,2,10
