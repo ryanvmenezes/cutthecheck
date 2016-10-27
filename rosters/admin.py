@@ -48,13 +48,3 @@ class PlayerAdmin(admin.ModelAdmin):
     list_editable = ("manager",)
     inlines = [DraftPickInline]
     ordering = ["-manager","-salary"]
-
-@admin.register(DraftPick)
-class DraftPickAdmin(admin.ModelAdmin):
-    list_display = ("squad","player","draft_round", "draft_pick",)
-    readonly_fields = ("note",)
-    list_editable = ("player",)
-    ordering = ["draft_round","draft_pick","squad"]
-    list_display = ("full_name", "nba_team", "manager", "salary", "draft_round", "draft_pick")
-    list_editable = ("manager", "draft_round", "draft_pick")
-    ordering = ["nba_team","-salary"]

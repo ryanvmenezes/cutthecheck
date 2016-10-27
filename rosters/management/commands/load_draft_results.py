@@ -2,7 +2,7 @@ import csv
 from django.core.management.base import BaseCommand
 from rosters.models import Player, Squad, LastUpdated, DraftPick
 from django.db.models import Sum
-from datetime import datetime
+from django.utils import timezone
 
 
 class Command(BaseCommand):

@@ -2,8 +2,7 @@ import csv
 from django.core.management.base import BaseCommand
 from rosters.models import Player, Squad, LastUpdated, DraftPick
 from django.db.models import Sum
-from datetime import datetime
-
+from django.utils import timezone
 
 class Command(BaseCommand):
     '''
@@ -70,3 +69,11 @@ class Command(BaseCommand):
                         p.note,
                     ]
                 )
+
+        LastUpdated.objects.all().delete()
+
+        # mark last update
+        last_update_obj = LastUpdated(
+          last_update=timezone.now()
+        )
+        last_update_obj.save()
