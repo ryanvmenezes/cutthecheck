@@ -42,5 +42,7 @@ class PlayerAdmin(admin.ModelAdmin):
 
 @admin.register(DraftPick)
 class DraftPickAdmin(admin.ModelAdmin):
-    list_display = ("squad","player","draft_round", "draft_pick","note")
+    list_display = ("squad","player","draft_round", "draft_pick",)
+    readonly_fields = ("note",)
+    list_editable = ("player",)
     ordering = ["draft_round","draft_pick","squad"]

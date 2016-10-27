@@ -126,5 +126,5 @@ BAKERY_VIEWS = (
     'rosters.views.AuditView',
     'rosters.views.BibleView',
     'rosters.views.ProfileView',
-    'rosters.views.DraftPickiew',
+    'rosters.views.DraftPickView',
 )
