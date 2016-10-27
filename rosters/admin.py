@@ -10,9 +10,17 @@ class PlayerInline(admin.TabularInline):
         'nba_team',
         'salary',
     )
-    # can_delete = False
-    # def has_add_permission(self, request):
-    #     return False
+
+class DraftPickInline(admin.TabularInline):
+    model = DraftPick
+    max_num = 1
+    fields = (
+        # 'draft_round',
+        # 'draft_pick',
+        # 'squad',
+        # "draft_pick_display",
+    )
+
 
 @admin.register(Squad)
 class SquadAdmin(admin.ModelAdmin):
@@ -36,8 +44,9 @@ class PlayerAdmin(admin.ModelAdmin):
         "salary",
     )
     list_per_page = 5000
-    list_display = ("full_name", "nba_team", "manager", "salary")#, "draft_round", "draft_pick")
-    list_editable = ("manager",)#, "draft_round", "draft_pick")
+    list_display = ("full_name", "nba_team", "manager", "salary")
+    list_editable = ("manager",)
+    inlines = [DraftPickInline]
     ordering = ["-manager","-salary"]
 
 @admin.register(DraftPick)

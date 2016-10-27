@@ -1,111 +1,111 @@
-round,pick,manager,note
-0,1,Christian M,kept
-0,2,Christian M,kept
-0,3,Christian M,kept
-0,1,Justin,kept
-0,2,Justin,kept
-0,3,Justin,kept
-0,1,Ryan,kept
-0,2,Ryan,kept
-0,3,Ryan,kept
-0,1,Everett,kept
-0,2,Everett,kept
-0,3,Everett,kept
-0,1,Austin,kept
-0,2,Austin,kept
-0,3,Austin,kept
-0,1,eli,kept
-0,2,eli,kept
-0,3,eli,kept
-0,1,sam,kept
-0,2,sam,kept
-0,3,sam,kept
-0,1,Zach,kept
-0,2,Zach,kept
-0,3,Zach,kept
-0,1,Pedro Moura,kept
-0,2,Pedro Moura,kept
-0,3,Pedro Moura,kept
-0,1,Ryan Kartje,kept
-0,2,Ryan Kartje,kept
-0,3,Ryan Kartje,kept
-1,1,Christian M,
-1,2,Justin,
-1,3,Ryan,
-1,4,Everett,
-1,5,Austin,
-1,6,eli,
-1,7,sam,
-1,8,Zach,
-1,9,Pedro Moura,
-1,10,Ryan Kartje,
-2,1,Christian M,
-2,2,Justin,
-2,3,Ryan,
-2,4,Everett,
-2,5,Austin,
-2,6,eli,
-2,7,sam,
-2,8,Zach,
-2,9,Pedro Moura,
-2,10,Ryan Kartje,
-3,1,Christian M,
-3,2,Justin,
-3,3,Ryan,
-3,4,Everett,
-3,5,Austin,
-3,6,eli,
-3,7,sam,
-3,8,Zach,
-3,9,Pedro Moura,
-3,10,Ryan Kartje,
-4,1,Ryan Kartje,
-4,2,Pedro Moura,
-4,3,Zach,Traded
-4,4,sam,
-4,5,eli,
-4,6,Austin,
-4,7,Everett,
-4,8,Ryan,
-4,9,Justin,
-4,10,Christian M,
-5,1,Christian M,
-5,2,Justin,
-5,3,Ryan,
-5,4,Everett,
-5,5,Austin,
-5,6,eli,
-5,7,Justin,Traded
-5,8,Zach,
-5,9,Pedro Moura,
-5,10,Ryan Kartje,
-6,1,Zach,Traded
-6,2,Pedro Moura,
-6,3,Zach,
-6,4,sam,
-6,5,eli,
-6,6,Austin,
-6,7,Everett,
-6,8,Ryan,
-6,9,Justin,
-6,10,Christian M,
-7,1,Christian M,
-7,2,Justin,
-7,3,Ryan,
-7,4,Everett,
-7,5,Austin,
-7,6,eli,
-7,7,sam,
-7,8,Zach,
-7,9,Pedro Moura,
-7,10,Ryan Kartje,
-8,1,Ryan Kartje,
-8,2,Pedro Moura,
-8,3,Zach,
-8,4,sam,
-8,5,eli,
-8,6,Austin,
-8,7,Everett,
-8,8,Ryan,
-8,9,Justin,
-8,10,Christian M,
+round,pick,manager,note,player,salary,team
+0,1,Christian M,kept,Dennis Schroder,2708582,atlanta hawks
+0,2,Christian M,kept,Jusuf Nurkic,1921320,denver nuggets
+0,3,Christian M,kept,Rodney Hood,1406520,utah jazz
+0,1,Justin,kept,Klay Thompson,16663575,golden state warriors
+0,2,Justin,kept,Andrew Wiggins,6006600,minnesota timberwolves
+0,3,Justin,kept,Jabari Parker,5374320,milwaukee bucks
+0,1,Ryan,kept,Al Horford,26540100,boston celtics
+0,2,Ryan,kept,Stephen Curry,12112359,golden state warriors
+0,3,Ryan,kept,Julius Randle,3267120,los angeles lakers
+0,1,Everett,kept,LeBron James,30963450,cleveland cavaliers
+0,2,Everett,kept,John Wall,16957900,washington wizards
+0,3,Everett,kept,Gorgui Dieng,2348783,minnesota timberwolves
+0,1,Austin,kept,Blake Griffin,20140838,los angeles clippers
+0,2,Austin,kept,DeMarcus Cousins,16957900,sacramento kings
+0,3,Austin,kept,Giannis Antetokounmpo,2995421,milwaukee bucks
+0,1,eli,kept,Paul George,18314532,indiana pacers
+0,2,eli,kept,Kawhi Leonard,17638063,san antonio spurs
+0,3,eli,kept,Aaron Gordon,4351320,orlando magic
+0,1,sam,kept,Anthony Davis,22116750,new orleans pelicans
+0,2,sam,kept,Jimmy Butler,17552209,chicago bulls
+0,3,sam,kept,Kyle Lowry,12000000,toronto raptors
+0,1,Zach,kept,Russell Westbrook,26540100,oklahoma city thunder
+0,2,Zach,kept,Karl-Anthony Towns,5960160,minnesota timberwolves
+0,3,Zach,kept,Rudy Gobert,2121288,utah jazz
+0,1,Pedro Moura,kept,Victor Oladipo,6552960,oklahoma city thunder
+0,2,Pedro Moura,kept,Kristaps Porzingis,4317720,new york knicks
+0,3,Pedro Moura,kept,C.J. McCollum,3219579,portland trail blazers
+0,1,Ryan Kartje,kept,James Harden,26540100,houston rockets
+0,2,Ryan Kartje,kept,Draymond Green,15330435,golden state warriors
+0,3,Ryan Kartje,kept,Nikola Jokic,1358500,denver nuggets
+1,1,Christian M,,Isaiah Thomas,6587132,boston celtics
+1,2,Justin,,Damian Lillard,24328425,portland trail blazers
+1,3,Ryan,,Devin Booker,2223600,phoenix suns
+1,4,Everett,,Brandon Ingram,5281680,los angeles lakers
+1,5,Austin,,Joel Embiid,4826160,philadelphia 76ers
+1,6,eli,,Kyrie Irving,17638063,cleveland cavaliers
+1,7,sam,,Kemba Walker,12000000,charlotte hornets
+1,8,Zach,,Clint Capela,1296240,houston rockets
+1,9,Pedro Moura,,Kevin Durant,26540100,golden state warriors
+1,10,Ryan Kartje,,D'Angelo Russell,5332800,los angeles lakers
+2,1,Christian M,,Steven Adams,3140517,oklahoma city thunder
+2,2,Justin,,Derrick Favors,11050000,utah jazz
+2,3,Ryan,,Chris Paul,22868828,los angeles clippers
+2,4,Everett,,Dario Saric,2318280,philadelphia 76ers
+2,5,Austin,,Will Barton,3533333,denver nuggets
+2,6,eli,,Jae Crowder,,
+2,7,sam,,,,
+2,8,Zach,,,,
+2,9,Pedro Moura,,,,
+2,10,Ryan Kartje,,,,
+3,1,Christian M,,,,
+3,2,Justin,,,,
+3,3,Ryan,,,,
+3,4,Everett,,,,
+3,5,Austin,,,,
+3,6,eli,,,,
+3,7,sam,,,,
+3,8,Zach,,,,
+3,9,Pedro Moura,,,,
+3,10,Ryan Kartje,,,,
+4,1,Ryan Kartje,,,,
+4,2,Pedro Moura,,,,
+4,3,Zach,Traded,,,
+4,4,sam,,,,
+4,5,eli,,,,
+4,6,Austin,,,,
+4,7,Everett,,,,
+4,8,Ryan,,,,
+4,9,Justin,,,,
+4,10,Christian M,,,,
+5,1,Christian M,,,,
+5,2,Justin,,,,
+5,3,Ryan,,,,
+5,4,Everett,,,,
+5,5,Austin,,,,
+5,6,eli,,,,
+5,7,Justin,Traded,,,
+5,8,Zach,,,,
+5,9,Pedro Moura,,,,
+5,10,Ryan Kartje,,,,
+6,1,Zach,Traded,,,
+6,2,Pedro Moura,,,,
+6,3,Zach,,,,
+6,4,sam,,,,
+6,5,eli,,,,
+6,6,Austin,,,,
+6,7,Everett,,,,
+6,8,Ryan,,,,
+6,9,Justin,,,,
+6,10,Christian M,,,,
+7,1,Christian M,,,,
+7,2,Justin,,,,
+7,3,Ryan,,,,
+7,4,Everett,,,,
+7,5,Austin,,,,
+7,6,eli,,,,
+7,7,sam,,,,
+7,8,Zach,,,,
+7,9,Pedro Moura,,,,
+7,10,Ryan Kartje,,,,
+8,1,Ryan Kartje,,,,
+8,2,Pedro Moura,,,,
+8,3,Zach,,,,
+8,4,sam,,,,
+8,5,eli,,,,
+8,6,Austin,,,,
+8,7,Everett,,,,
+8,8,Ryan,,,,
+8,9,Justin,,,,
+8,10,Christian M,,,,

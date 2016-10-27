@@ -124,6 +124,11 @@ class DraftPick(BuildableModel):
         help_text="Note about this pick",
     )
 
+    def __unicode__(self):
+        return "rd {} pk {} squad {}".format(
+            self.draft_round, self.draft_pick, self.squad
+        )
+
 
 class LastUpdated(BuildableModel):
     '''
