@@ -1,4 +1,5 @@
 #!/bin/sh
+
 python manage.py sum_squad_salaries
 python manage.py dump_draft_file
 python manage.py build
