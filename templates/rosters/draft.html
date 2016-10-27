@@ -7,6 +7,7 @@
 <div class="row-fluid">
     <h1 style="margin-bottom:15px;">2016-17 Draft</h1>
 </div>
+
 <div class="row">
     <table class="table span9">
         <thead>
@@ -17,12 +18,13 @@
             <th>NBA team</th>
             <th class="right">Total salary</th>
             <th>Manager</th>
+            <th>Note</th>
         </tr>
         </thead>
         {% for obj in draftpick_list %}
             <tr>
               {% if obj.draft_round == 0 %}
-              <td>kept</td>
+              <td></td>
               <td></td>
               {% else %}
               <td>{{ obj.draft_round }}</td>
@@ -38,6 +40,7 @@
               <td></td>
               {% endif %}
               <td><a href="{{ obj.squad.get_absolute_url }}">{{ obj.squad.get_manager_display }}</a></td>
+              <td>{{ obj.note }}</td>
             </tr>
         {% endfor %}
     </table>
