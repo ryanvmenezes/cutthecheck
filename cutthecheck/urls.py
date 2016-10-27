@@ -30,7 +30,7 @@ urlpatterns = patterns('',
     ),
     url(
         r'^cutthecheck/draft/$',
-        views.DraftView.as_view(),
+        views.DraftPickView.as_view(),
         name='draft-1617'
     ),
 )

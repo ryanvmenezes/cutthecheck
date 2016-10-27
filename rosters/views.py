@@ -1,7 +1,7 @@
 from __future__ import division
 import os
 import calculate
-from rosters.models import Squad, Player, LastUpdated
+from rosters.models import Squad, Player, LastUpdated, DraftPick
 from django.db.models import Count, Sum
 from django.conf import settings
 from bakery.views import BuildableListView, BuildableDetailView
@@ -9,6 +9,10 @@ from bakery.views import BuildableListView, BuildableDetailView
 
 
 last_updated = LastUpdated.objects.all()[0]
+
+universal_context = {
+    'last_updated': last_updated,
+}
 
 class AuditView(BuildableListView):
     '''
@@ -20,9 +24,7 @@ class AuditView(BuildableListView):
 
     def get_context_data(self, **kwargs):
         context = super(AuditView, self).get_context_data(**kwargs)
-        context.update({
-            'last_updated': last_updated,
-        })
+        context.update(universal_context)
         return context
 
 class ProfileView(BuildableDetailView):
@@ -40,9 +42,7 @@ class ProfileView(BuildableDetailView):
         return os.path.join(dir_path, 'index.html')
     def get_context_data(self, **kwargs):
         context = super(ProfileView, self).get_context_data(**kwargs)
-        context.update({
-            'last_updated': last_updated,
-        })
+        context.update(universal_context)
         return context
 
 class BibleView(BuildableListView):
@@ -54,21 +54,17 @@ class BibleView(BuildableListView):
     queryset = Player.objects.order_by('nba_team', '-salary')
     def get_context_data(self, **kwargs):
         context = super(BibleView, self).get_context_data(**kwargs)
-        context.update({
-            'last_updated': last_updated,
-        })
+        context.update(universal_context)
         return context
 
-class DraftView(BuildableListView):
+class DraftPickView(BuildableListView):
     '''
     The draft
     '''
     build_path = 'cutthecheck/draft/index.html'
     template_name = 'rosters/draft.html'
-    queryset = Player.objects.order_by('manager', 'draft_round', 'draft_pick')
+    queryset = DraftPick.objects.order_by("draft_round","draft_pick","squad")
     def get_context_data(self, **kwargs):
-        context = super(DraftView, self).get_context_data(**kwargs)
-        context.update({
-            'last_updated': last_updated,
-        })
+        context = super(DraftPickView, self).get_context_data(**kwargs)
+        context.update(universal_context)
         return context

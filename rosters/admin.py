@@ -1,5 +1,5 @@
 from django.contrib import admin
-from rosters.models import Squad, Player
+from rosters.models import Squad, Player, DraftPick
 
 class PlayerInline(admin.TabularInline):
     model = Player
@@ -39,3 +39,8 @@ class PlayerAdmin(admin.ModelAdmin):
     list_display = ("full_name", "nba_team", "manager", "salary")#, "draft_round", "draft_pick")
     list_editable = ("manager",)#, "draft_round", "draft_pick")
     ordering = ["-manager","-salary"]
+
+@admin.register(DraftPick)
+class DraftPickAdmin(admin.ModelAdmin):
+    list_display = ("squad","player","draft_round", "draft_pick","note")
+    ordering = ["draft_round","draft_pick","squad"]
