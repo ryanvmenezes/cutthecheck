@@ -11,7 +11,7 @@ class Command(BaseCommand):
         csv_writer = csv.writer(csv_file)
         header = ['player', 'salary', 'team']
         csv_writer.writerow(header)
-        for player in Player.objects.all():
+        for player in Player.objects.order_by('nba_team','-salary'):
         	row = [player.full_name, player.salary, player.nba_team]
         	csv_writer.writerow(row)
         csv_file.close()
