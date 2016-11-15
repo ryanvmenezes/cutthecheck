@@ -1,13 +1,11 @@
 from django.core.management.base import BaseCommand
-from rosters.models import Squad, LastUpdated
+from rosters.models import Squad, LastUpdated, Player
 from yahooapi import YahooAPI
 from django.template.defaultfilters import slugify
 from django.utils import timezone
+import datetime
 
 class Command(BaseCommand):
-    '''
-    docstring
-    '''
 
     def add_arguments(self, parser):
         # Named (optional) arguments
@@ -20,12 +18,17 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        print "flushing squad database"
+        logfile = open('rosters/management/commands/errors_load_squads.txt', 'wb')
+
+        now = datetime.datetime.today()
+        logfile.write('Starting update {}\n\n'.format(now.strftime("%d %B %Y %H:%M")))
+
+        logfile.write("flushing squad database\n\n")
         Squad.objects.all().delete()
 
         if options['blank']:
             for manager_nickname, manager_fullname in Squad.MANAGER_CHOICES:
-                print "initalizing blank team for {}".format(manager_nickname)
+                logfile.write("initalizing blank team for {}\n".format(manager_nickname))
                 squad_obj = Squad(
                     manager=manager_nickname,
                 )
@@ -48,9 +51,9 @@ class Command(BaseCommand):
                 output = request['fantasy_content']['team']
 
                 # initialize all Squads
-                manager_nickname = output[0][14]['managers'][0]['manager']['nickname']
+                manager_nickname = output[0][19]['managers'][0]['manager']['nickname']
 
-                print "initalizing team for {}".format(manager_nickname)
+                logfile.write("initalizing team for {}\n".format(manager_nickname))
                 squad_obj = Squad(
                     manager=manager_nickname,
                 )
@@ -62,8 +65,11 @@ class Command(BaseCommand):
                     'Matthew Dellavedova': 'Matt Dellavedova',
                     'Otto Porter': 'Otto Porter Jr.',
                     'Ish Smith': 'Ishmael Smith',
-                    'Steven Adams': 'Steve Adams',
                     'Kentavious Caldwell-Pope': 'Kentavious Caldwell-Pope ',
+                    'Enes Kanter': 'Enes  Kanter',
+                    'J.J. Barea': 'Jose Barea',
+                    'Patty Mills': 'Patrick Mills',
+                    'Lou Williams': 'Louis Williams',
                 }
 
                 # loading players to each roster
@@ -82,7 +88,7 @@ class Command(BaseCommand):
                         new_player_obj.save()
                         squad_obj.save()
                     except Player.DoesNotExist:
-                        print "No record of {}".format(player_name)
+                        logfile.write("***NO RECORD OF {}***".format(player_name))
 
             # mark last update
             LastUpdated.objects.all().delete()

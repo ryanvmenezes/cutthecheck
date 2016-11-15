@@ -1,10 +1,15 @@
 #!/bin/sh
 
-python manage.py load_draft_order
+workon cutthecheck
+
+python manage.py load_salaries
+python manage.py load_squads
 python manage.py build
 
-git add rosters/management/commands/draft_order.csv
-git commit -m "auto committing rosters $now"
+python manage.py dump_salaries
+
+git add .
+git commit -m "auto committing $now"
 git push origin master
 
 cp -R -u build/cutthecheck/ ../ryanvmenezes.github.io/
