@@ -13,7 +13,7 @@ Taurean Prince,2318280,atlanta hawks
 Tim Hardaway Jr.,2281605,atlanta hawks
  DeAndre' Bembry,1499760,atlanta hawks
 Mike Muscala,1015696,atlanta hawks
-Walter Tavares,1000000,atlanta hawks
+Ryan Kelly,979848,atlanta hawks
 Al Horford,26540100,boston celtics
 Amir Johnson,12000000,boston celtics
 Avery Bradley,8269663,boston celtics
@@ -33,7 +33,6 @@ Brook Lopez,21165675,brooklyn nets
 Jeremy Lin,11483254,brooklyn nets
 Trevor Booker,9250000,brooklyn nets
 Luis Scola,5500000,brooklyn nets
-Greivis Vasquez,4347826,brooklyn nets
 Bojan Bogdanovic,3573020,brooklyn nets
 Justin Hamilton,3000000,brooklyn nets
 Randy Foye,2500000,brooklyn nets
@@ -44,6 +43,7 @@ Isaiah Whitehead,1074145,brooklyn nets
 Anthony Bennett,1015696,brooklyn nets
 Joe Harris,980431,brooklyn nets
 Sean Kilpatrick,980431,brooklyn nets
+Yogi Ferrell,495518,brooklyn nets
 Nicolas Batum,20869565,charlotte hornets
 Michael Kidd-Gilchrist,13000000,charlotte hornets
 Marvin Williams,12250000,charlotte hornets
@@ -72,8 +72,8 @@ Jerian Grant,1643040,chicago bulls
 Bobby Portis,1453680,chicago bulls
 Isaiah Canaan,1015696,chicago bulls
 Cristiano Felicio,874636,chicago bulls
+R.J. Hunter,864346,chicago bulls
 Paul Zipser,750000,chicago bulls
-R.J. Hunter,540274,chicago bulls
 LeBron James,30963450,cleveland cavaliers
 Kevin Love,21165675,cleveland cavaliers
 Kyrie Irving,17638063,cleveland cavaliers
@@ -281,7 +281,6 @@ Quincy Pondexter,3617978,new orleans pelicans
 Buddy Hield,3517200,new orleans pelicans
 Dante Cunningham,2978250,new orleans pelicans
 Tim Frazier,2090000,new orleans pelicans
-Lance Stephenson,980431,new orleans pelicans
 Terrence Jones,980431,new orleans pelicans
 Cheick Diallo,543471,new orleans pelicans
 Carmelo Anthony,24559380,new york knicks
@@ -301,7 +300,6 @@ Maurice N'dour,543471,new york knicks
 Marshall Plumlee,543471,new york knicks
 Russell Westbrook,26540100,oklahoma city thunder
 Enes  Kanter,17145838,oklahoma city thunder
-Ersan Ilyasova,8400000,oklahoma city thunder
 Victor Oladipo,6552960,oklahoma city thunder
 Alex Abrines,5994764,oklahoma city thunder
 Kyle Singler,4837500,oklahoma city thunder
@@ -313,6 +311,7 @@ Andre Roberson,2183072,oklahoma city thunder
 Cameron Payne,2112480,oklahoma city thunder
 Joffrey Lauvergne,1709719,oklahoma city thunder
 Josh Huestis,1191480,oklahoma city thunder
+Jerami Grant,980431,oklahoma city thunder
 Semaj Christon,543471,oklahoma city thunder
 Bismack Biyombo,17000000,orlando magic
 Evan Fournier,17000000,orlando magic
@@ -331,6 +330,7 @@ Damjan Rudez,980431,orlando magic
 Stephen Zimmerman,950000,orlando magic
 Jerryd Bayless,9424084,philadelphia 76ers
 Gerald Henderson,9000000,philadelphia 76ers
+Ersan Ilyasova,8400000,philadelphia 76ers
 Sergio Rodriguez,8000000,philadelphia 76ers
 Ben Simmons,5903160,philadelphia 76ers
 Joel Embiid,4826160,philadelphia 76ers
@@ -342,7 +342,6 @@ Timothe Luwawu-Cabarrot,1326960,philadelphia 76ers
 Richaun Holmes,1025831,philadelphia 76ers
 Robert Covington,1015696,philadelphia 76ers
 Hollis Thompson,1015696,philadelphia 76ers
-Jerami Grant,980431,philadelphia 76ers
 T.J. McConnell,874636,philadelphia 76ers
 Eric Bledsoe,14000000,phoenix suns
 Brandon Knight,12606250,phoenix suns
@@ -356,6 +355,7 @@ Marquese Chriss,2941440,phoenix suns
 Devin Booker,2223600,phoenix suns
 T.J. Warren,2128920,phoenix suns
 John Jenkins,1050961,phoenix suns
+Archie Goodwin,938025,phoenix suns
 Tyler Ulis,918369,phoenix suns
 Alan Williams,874636,phoenix suns
 Derrick Jones Jr.,543471,phoenix suns
@@ -429,7 +429,7 @@ Dante Exum,3940320,utah jazz
 Shelvin Mack,2433334,utah jazz
 Trey Lyles,2340600,utah jazz
 Joe Ingles,2150000,utah jazz
-Rudy Gobert,2121288,utah jazz
+Rudy Gobert,2121287,utah jazz
 Rodney Hood,1406520,utah jazz
 Jeff Withey,1015696,utah jazz
 Raul Neto,937800,utah jazz
