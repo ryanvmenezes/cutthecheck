@@ -1,4 +1,14 @@
-Starting update 23 November 2016 10:38
+Starting update 23 November 2016 10:40
 
 flushing squad database
 
+initalizing team for Ryan
+initalizing team for Justin
+initalizing team for Zach
+initalizing team for Ryan Kartje
+initalizing team for eli
+initalizing team for Austin
+initalizing team for sam
+initalizing team for Everett
+initalizing team for Pedro Moura
+initalizing team for Christian M
