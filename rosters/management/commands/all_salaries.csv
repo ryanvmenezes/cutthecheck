@@ -3,7 +3,7 @@ Dwight Howard,23180275,atlanta hawks
 Paul Millsap,20072033,atlanta hawks
 Kent Bazemore,15730338,atlanta hawks
 Tiago Splitter,8550000,atlanta hawks
-Kyle Korver,5239437,atlanta hawks
+Mike Dunleavy,4837500,atlanta hawks
 Kris Humphries,4000000,atlanta hawks
 Thabo Sefolosha,3850000,atlanta hawks
 Mike Scott,3333334,atlanta hawks
@@ -11,9 +11,9 @@ Dennis Schroder,2708582,atlanta hawks
 Malcom Delaney,2500000,atlanta hawks
 Taurean Prince,2318280,atlanta hawks
 Tim Hardaway Jr.,2281605,atlanta hawks
+Mo Williams,2194500,atlanta hawks
  DeAndre' Bembry,1499760,atlanta hawks
 Mike Muscala,1015696,atlanta hawks
-Ryan Kelly,979848,atlanta hawks
 Al Horford,26540100,boston celtics
 Amir Johnson,12000000,boston celtics
 Avery Bradley,8269663,boston celtics
@@ -40,7 +40,6 @@ Caris LeVert,1562280,brooklyn nets
 Rondae Hollis-Jefferson,1395600,brooklyn nets
 Chris McCullough,1191480,brooklyn nets
 Isaiah Whitehead,1074145,brooklyn nets
-Anthony Bennett,1015696,brooklyn nets
 Joe Harris,980431,brooklyn nets
 Sean Kilpatrick,980431,brooklyn nets
 Spencer Dinwiddie,726672,brooklyn nets
@@ -56,7 +55,6 @@ Cody Zeller,5318313,charlotte hornets
 Roy Hibbert,5000000,charlotte hornets
 Frank Kaminsky,2730000,charlotte hornets
 Brian Roberts,980431,charlotte hornets
-Aaron Harrison,874636,charlotte hornets
 Christian Wood,874636,charlotte hornets
 Treveon Graham,543471,charlotte hornets
 Dwyane Wade,23200000,chicago bulls
@@ -80,9 +78,8 @@ Tristan Thompson,15330435,cleveland cavaliers
 J.R. Smith,12800000,cleveland cavaliers
 Iman Shumpert,9662921,cleveland cavaliers
 Channing Frye,7806971,cleveland cavaliers
-Mike Dunleavy,4837500,cleveland cavaliers
+Kyle Korver,5239437,cleveland cavaliers
 Richard Jefferson,2500000,cleveland cavaliers
-Mo Williams,2194500,cleveland cavaliers
 DeAndre Liggins,1015696,cleveland cavaliers
 Chris Andersen,980431,cleveland cavaliers
 James Jones,980431,cleveland cavaliers
@@ -116,7 +113,7 @@ Jusuf Nurkic,1921320,denver nuggets
 Gary Harris,1655880,denver nuggets
 Malik Beasley,1627320,denver nuggets
 Nikola Jokic,1358500,denver nuggets
-Alonzo Gee,853552,denver nuggets
+Alonzo Gee,57672,denver nuggets
 Andre Drummond,22116750,detroit pistons
 Tobias Harris,17200000,detroit pistons
 Reggie Jackson,14956522,detroit pistons
@@ -280,7 +277,7 @@ Buddy Hield,3517200,new orleans pelicans
 Dante Cunningham,2978250,new orleans pelicans
 Tim Frazier,2090000,new orleans pelicans
 Terrence Jones,980431,new orleans pelicans
-Reggie Williams,715138,new orleans pelicans
+Donatas Motiejunas,576724,new orleans pelicans
 Cheick Diallo,543471,new orleans pelicans
 Carmelo Anthony,24559380,new york knicks
 Derrick Rose,21323252,new york knicks
@@ -324,7 +321,6 @@ Aaron Gordon,4351320,orlando magic
 Mario Hezonja,3909840,orlando magic
 Elfrid Payton,2613600,orlando magic
 C.J. Wilcox,1209600,orlando magic
-Arinze Onuaku,980431,orlando magic
 Damjan Rudez,980431,orlando magic
 Stephen Zimmerman,950000,orlando magic
 Jerryd Bayless,9424084,philadelphia 76ers
@@ -353,7 +349,6 @@ Leandro Barbosa,4000000,phoenix suns
 Marquese Chriss,2941440,phoenix suns
 Devin Booker,2223600,phoenix suns
 T.J. Warren,2128920,phoenix suns
-John Jenkins,1050961,phoenix suns
 Tyler Ulis,918369,phoenix suns
 Alan Williams,874636,phoenix suns
 Derrick Jones Jr.,543471,phoenix suns
